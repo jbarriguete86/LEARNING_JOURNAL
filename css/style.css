@@ -7,8 +7,7 @@ body {
 .blog-entry{
     display: grid;
     max-width: 374px;
-    max-height: 368px;
-    grid-template: minmax(100px, 1fr) 1fr 1fr 1fr / auto auto  ;
+    grid-template: minmax(100px, 1fr) repeat(3, 1fr) / 1fr 1fr  ;
     grid-template-areas: 
     "image image"
     "date ."
@@ -16,7 +15,9 @@ body {
     "body body";
 }
 
-.blog-image{ grid-area: image; object-fit: cover;}
+.blog-image{ 
+    grid-area: image; 
+    object-fit:cover;}
 .blog-title{ grid-area: title;}
 .blog-body{grid-area: body;}
 .blog-date{grid-area: date;}
