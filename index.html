@@ -1,30 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--FONT AWESOME -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
     <title>My Learning Journal</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <img src="images/header_img.png" alt="header icon">
-        <h1>My Learning Journal</h1>
-        <h2>home</h2>
-        <h3>About me</h3>
+        <div class="logo">
+            <img class="logo-image" src="images/header_img.png" alt="header icon">
+            <h1 class="logo-text">My Learning Journal</h1>
+        </div>
+        <div class="header-btns">
+            <h2>home</h2>
+            <h2>About me</h2>
+        </div>
     </header>
     <section class="intro-section">
-        <p>June 6, 2023</p>
-        <h1> My journey as Front End Developer / productor</h1>
-        <p>Dream while you're awake because when you're sleeping, you don't get to choose your dreams. 
-            That quote is from a Spanish rapper named AMBKOR and it still resonates in every corner of my soul and mind.
-            I started studying coding with Udemy, but I soon realized I needed feedback from experts and the opportunity 
-            to connect with a community of like-minded peers. Therefore, I decided to enroll as a bootcamp student in the 
-            Frontend Developer Career Path. This journal captures some of the experiences I've had on this incredible learning journey.
-        </p>
+        <div class="container">
+            <p class="intro-date white">June 6, 2023</p>
+            <h1 class="intro-title white"> My journey as Front End Developer / productor</h1>
+            <p class="white">Dream while you're awake because when you're sleeping, you don't get to choose your dreams.
+                That quote is from a Spanish rapper named AMBKOR and it still resonates in every corner of my soul and
+                mind.
+                I started studying coding with Udemy, but I soon realized I needed feedback from experts and the
+                opportunity
+                to connect with a community of like-minded peers. Therefore, I decided to enroll as a bootcamp student
+                in the
+                Frontend Developer Career Path. This journal captures some of the experiences I've had on this
+                incredible learning journey.
+            </p>
+        </div>
     </section>
 
     <section class="blog-section">
@@ -36,7 +51,7 @@
             </p>
             <p class="blog-date">March 23, 2023</p>
         </div> 
-        <!-- <div class="blog-entry">
+        <div class="blog-entry">
             <img class="blog-image" src="images/scoreboard_project.png" alt="a computer and the vs-code opened">
             <h1 class="blog-title"> I cannot believe I'm building apps</h1>
             <p class="blog-body">It's amazing how so soon I have start to build easy apps, such as a scoreboard. 
@@ -52,7 +67,11 @@
                 how many storms are in the path, this will keep me on track
             </p>
             <p class="blog-date">April 23, 2023</p>
-        </div> -->
+        </div>
     </section>
+    <div class="btn-div">
+        <a class="btn" href="#">View More</a>
+    </div>
 </body>
+
 </html>
