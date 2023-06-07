@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -15,6 +15,20 @@ h1 {
 
 p {
     font-size: 1rem;
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: solid;
+}
+
+a:focus,
+a:hover {
+    color: blue;
+    font-weight: bolder;
+    cursor: pointer;
+
 }
 
 /* HEADER */
@@ -51,9 +65,11 @@ header {
     justify-content: end;
     gap: 1.6em;
     padding-right: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.header-btns h2 {
+.header-btns a {
     text-transform: uppercase;
     font-size: .75rem;
 }
@@ -91,16 +107,16 @@ header {
 
 
 /* BLOG ENTRIES */
-.blog-section{
+.blog-section {
     display: grid;
     background-color: #ffffff;
-    width: 100vw; 
+    width: 100vw;
     margin-top: 34px;
     grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
     grid-gap: 1em;
 }
 
-.blog-entry{
+.blog-entry {
     display: flex;
     max-width: 374px;
     margin: 0 auto;
@@ -111,48 +127,47 @@ header {
     gap: 9px;
 }
 
-.blog-image{
-    max-width: 374px; 
+.blog-image {
+    max-width: 374px;
     height: 100%;
     object-fit: cover;
     /* margin: 0 auto; */
-    
+
 }
 
 .blog-title,
 .blog-body,
-.blog-date{
+.blog-date {
     align-self: flex-start;
     margin: 0;
 }
 
-.blog-title{
+.blog-title {
     font-size: 1.5rem;
-    order:3;
+    order: 3;
 }
 
-.blog-body{
+.blog-body {
     color: #505050;
- order: 4;
- line-height: 1.4;
+    order: 4;
+    line-height: 1.4;
 }
 
-.blog-date{
+.blog-date {
     margin-top: .85em;
     text-transform: uppercase;
     font-size: 0.87rem;
     order: 2;
 }
+
 /* VIEW MORE BUTTON */
 
-.btn-div{
+.btn-div {
     width: 100vw;
     text-align: center;
     margin-top: 27px;
 }
-.btn{
+
+.btn {
     font-size: 1em;
-    font-weight: bold;
-    color:black;
-    text-decoration: solid;
 }
