@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 html,
@@ -11,6 +11,10 @@ body {
 
 h1 {
     font-size: 1.25rem;
+}
+
+h2{
+    font-size: 1rem;
 }
 
 p {
@@ -74,37 +78,35 @@ header {
     font-size: .75rem;
 }
 
-/* INTRO SECTION */
+/*INTRO SECTION  */
 .intro-section {
-    display: flex;
+    display: grid;
     width: 100vw;
     min-height: 400px;
-    margin: 0 auto;
+    margin: 26px auto 0;
+    padding-left: 1.25em;
+    grid-template: repeat(3, 1fr) / repeat (2, 1fr);
+    grid-template-areas: 
+    "picture ."
+    "title title"
+    "body body";
 }
 
-.container {
-    background: url("/images/article-image-hero.png") black;
-    background-size: cover;
-    max-width: 474px;
-    margin: 10px auto 0;
-    padding: 1.25em;
+.profile-image{
+    grid-area: picture;
+    max-width: 11.37em;
+    height: 11.37em;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
-.white {
-    color: #ffffff;
-    text-shadow: 0 0 1px white;
-    line-height: 1.4;
-}
-
-.intro-date {
-    font-size: 0.75rem;
-}
-
-.intro-title {
+.intro-title{
+    grid-area: title;
     font-size: 2rem;
+    width: 100%;
 }
 
-
+.intro-body{ grid-area: body;}
 
 /* BLOG ENTRIES */
 .blog-section {
