@@ -1,5 +1,5 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 html,
@@ -84,7 +84,6 @@ header {
     width: 100vw;
     min-height: 400px;
     margin: 26px auto 0;
-    padding-left: 1.25em;
     grid-template: repeat(3, 1fr) / repeat (2, 1fr);
     grid-template-areas: 
     "picture ."
@@ -107,6 +106,13 @@ header {
 }
 
 .intro-body{ grid-area: body;}
+
+/* element padding */
+.intro-section,
+.container,
+.blog-entry{
+    padding:0 1.25em;
+}
 
 /* BLOG ENTRIES */
 .blog-section {

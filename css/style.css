@@ -31,6 +31,13 @@ a:hover {
 
 }
 
+/* FUNCTIONAL CSS */
+.white {
+    color: #ffffff;
+    text-shadow: 0 0 1px white;
+    line-height: 1.4;
+}
+
 /* HEADER */
 header,
 .logo,
@@ -76,25 +83,21 @@ header {
 
 /* INTRO SECTION */
 .intro-section {
+    background: url("/images/article-image-hero.png") black;
+    background-size: cover;
     display: flex;
     width: 100vw;
     min-height: 400px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .container {
-    background: url("/images/article-image-hero.png") black;
-    background-size: cover;
+    
     max-width: 474px;
     margin: 10px auto 0;
     padding: 1.25em;
 }
 
-.white {
-    color: #ffffff;
-    text-shadow: 0 0 1px white;
-    line-height: 1.4;
-}
 
 .intro-date {
     font-size: 0.75rem;
@@ -121,8 +124,7 @@ header {
     max-width: 374px;
     margin: 0 auto;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    padding:0 1.25em;
     justify-content: space-between;
     gap: 9px;
 }
@@ -131,7 +133,6 @@ header {
     max-width: 374px;
     height: 374px;
     object-fit: cover;
-    /* margin: 0 auto; */
 
 }
 
@@ -171,3 +172,37 @@ header {
 .btn {
     font-size: 1em;
 }
+
+/* FOOTER */
+footer,
+.footer-container{
+    display: flex;
+}
+
+footer{
+    width: 100vw;
+    min-height: 105px;
+    background-color: #202020;
+}
+
+.footer-container{
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    
+
+}
+
+.footer-item{
+    align-self: center;
+    margin: 0;
+}
+
+/* .footer-container h1{
+
+}  */
+
+.footer-container p{
+    color: #D7D7D7;
+}
+
