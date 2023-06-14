@@ -13,7 +13,7 @@ h1 {
     font-size: 1.25rem;
 }
 
-h2{
+h2 {
     font-size: 1rem;
 }
 
@@ -83,36 +83,50 @@ header {
     display: grid;
     width: 100vw;
     min-height: 400px;
-    margin: 26px auto 0;
+    padding: 1.62em auto 3.125em;
     grid-template: repeat(3, 1fr) / repeat (2, 1fr);
-    grid-template-areas: 
-    "picture ."
-    "title title"
-    "body body";
+    grid-template-areas:
+        "picture ."
+        "title title"
+        "body body";
 }
 
-.profile-image{
+
+.profile-image {
     grid-area: picture;
-    max-width: 11.37em;
+    width: 11.37em;
     height: 11.37em;
     object-fit: cover;
     border-radius: 100%;
 }
 
-.intro-title{
+.intro-title {
     grid-area: title;
     font-size: 2rem;
     width: 100%;
 }
 
-.intro-body{ grid-area: body;}
+.intro-body {
+    grid-area: body;
+}
 
-/* element padding */
+/* element multiple editing */
 .intro-section,
 .container,
-.blog-entry{
-    padding:0 1.25em;
+.blog-entry {
+    padding: 0 1.25em;
 }
+
+.container p,
+.intro-section p {
+    line-height: 1.2em;
+}
+
+/* MAIN SECTION */
+.main-section {
+    margin-bottom: 45px;
+}
+
 
 /* BLOG ENTRIES */
 .blog-section {
@@ -120,26 +134,33 @@ header {
     background-color: #ffffff;
     width: 100vw;
     margin-top: 34px;
+    padding-right: 1em;
     grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
     grid-gap: 1em;
 }
 
+.blog-intro {
+    grid-column: 1 / -1;
+    margin: auto;
+    font-size: 1em;
+    margin-bottom: 1.68em;
+}
+
 .blog-entry {
     display: flex;
-    max-width: 374px;
+    width: minmax(374px, 1fr);
     margin: 0 auto;
+
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     justify-content: space-between;
     gap: 9px;
 }
 
 .blog-image {
-    max-width: 374px;
+    width: 100%;
     height: 374px;
     object-fit: cover;
-    /* margin: 0 auto; */
+    align-self: center;
 
 }
 
@@ -178,4 +199,56 @@ header {
 
 .btn {
     font-size: 1em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1024px) {
+
+    .intro-section {
+        grid-template: repeat(2, 11.37em) / repeat(3, minmax(240px, 1fr));
+        gap: 1em;
+        grid-template-areas:
+            "picture title title"
+            "picture body body"
+        ;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .intro-title {
+        margin-top: auto;
+    }
+
+    .intro-body {
+        margin-bottom: auto;
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .container p,
+    .intro-section p {
+        line-height: 1.4em;
+    }
+
+    .blog-section {
+        grid-template-columns: repeat(3, minmax(330px, 1fr));
+        padding-right: 1em;
+    }
+
+    .blog-entry {
+        max-width: 100%;
+    }
+
+    .blog-image {
+        max-width: 100%;
+    }
+
+
 }
