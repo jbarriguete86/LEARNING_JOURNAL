@@ -24,8 +24,12 @@ a {
 }
 
 a:focus,
-a:hover {
+a:hover,
+i:hover,
+i:focus {
     color: blue;
+    background-color: #eeeeee;
+    border-radius: 34%;
     font-weight: bolder;
     cursor: pointer;
 
@@ -36,6 +40,15 @@ a:hover {
     color: #ffffff;
     text-shadow: 0 0 1px white;
     line-height: 1.4;
+}
+
+.displayed {
+    display: block;
+
+}
+
+.hidden {
+    display: none;
 }
 
 /* HEADER */
@@ -79,6 +92,10 @@ header {
 .header-btns a {
     text-transform: uppercase;
     font-size: .75rem;
+}
+
+.fa-solid {
+    display: none;
 }
 
 /* INTRO SECTION */
@@ -234,4 +251,43 @@ footer {
     }
 
 
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        position: relative;
+    }
+
+    .fa-solid {
+        display: inline-block;
+    }
+
+
+    .header-btn {
+        display: none;
+    }
+
+    .hamburger-btns {
+        width: 100vw;
+        height: 100vh;
+        background-color: #202020;
+        opacity: 80%;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .options {
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
+
+    }
+
+    .hamburger-option {
+        color: #eeeeee;
+    }
 }

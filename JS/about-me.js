@@ -9,6 +9,24 @@ const blogSection = document.getElementById('blog-section')
 const viewMore = document.querySelector('.btn-div')
 let counter = 0
 
+
+const hamburgerBtn = document.getElementById('hamburger-btn')
+let counterView = 0
+let counterHam = 0
+
+hamburgerBtn.addEventListener('click', function () {
+    const hamburgerDiv = document.getElementById('hamburger-btns')
+    if (counterHam == 0) {
+        hamburgerDiv.classList.add('displayed')
+        hamburgerDiv.classList.remove('hidden')
+        counterHam++
+    } else {
+        hamburgerDiv.classList.remove('displayed')
+        hamburgerDiv.classList.add('hidden')
+        counterHam--
+    }
+})
+
 viewMore.addEventListener('click', function () {
     const btn = document.getElementById('btn')
     if (counter == 0) {

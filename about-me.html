@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+
     <title>About me</title>
     <link rel="stylesheet" href="css/about.css">
 </head>
@@ -16,8 +25,15 @@
             <h1 class="logo-text">My Learning Journal</h1>
         </div>
         <div class="header-btns">
-            <a class="btn" href="index.html">Home</a>
-            <a class="btn" href="about-me.html">about me</a>
+            <i class="fa-solid fa-bars" id="hamburger-btn"></i>
+            <a class="header-btn" href="index.html">Home</a>
+            <a class="header-btn" href="about-me.html">about me</a>
+            <div class="hamburger-btns hidden" id="hamburger-btns">
+                <div class="options">
+                    <a class="hamburger-option" href="index.html">Home</a>
+                    <a class="hamburger-option" href="about-me.html">about me</a>
+                </div>
+            </div>
         </div>
     </header>
 
