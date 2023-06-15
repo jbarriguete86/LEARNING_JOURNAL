@@ -3,7 +3,7 @@ import {
 } from 'https://jspm.dev/uuid';
 
 export const blogData = [{
-        blogPic: `images/software-engineering.jpg`,
+        blogPic: `./images/software-engineering.jpg`,
         blogPicText: `a computer and the vs-code opened`,
         blogTitle: 'The beginning of a journey',
         blogText: `I've decided to come back to one of my passion, which is coding. I went from studying
