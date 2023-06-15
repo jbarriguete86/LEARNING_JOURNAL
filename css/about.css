@@ -39,6 +39,11 @@ i:focus {
 }
 
 /* FUNCTIONAL CSS */
+.white {
+    color: #ffffff;
+    text-shadow: 0 0 1px white;
+    line-height: 1.4;
+}
 
 .displayed {
     display: block;
@@ -57,7 +62,7 @@ header,
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 59px;
     justify-content: space-between;
     position: static;
@@ -95,6 +100,7 @@ header {
 .fa-solid {
     display: none;
 }
+
 
 /*INTRO SECTION  */
 .intro-section {
@@ -150,26 +156,19 @@ header {
 .blog-section {
     display: grid;
     background-color: #ffffff;
-    width: 100vw;
+    width: 100%;
     margin-top: 34px;
-    padding-right: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
+    /* padding-right: 1em; */
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
     grid-gap: 1em;
-}
-
-.blog-intro {
-    grid-column: 1 / -1;
-    margin: auto;
-    font-size: 1em;
-    margin-bottom: 1.68em;
 }
 
 .blog-entry {
     display: flex;
-    width: minmax(374px, 1fr);
+    /* width: minmax(374px, 1fr); */
     margin: 0 auto;
-
     flex-direction: column;
+    padding: 0 1.25em;
     justify-content: space-between;
     gap: 9px;
 }
@@ -210,13 +209,47 @@ header {
 /* VIEW MORE BUTTON */
 
 .btn-div {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     margin-top: 27px;
 }
 
 .btn {
     font-size: 1em;
+}
+
+/* FOOTER */
+footer,
+.footer-container {
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    min-height: 105px;
+    background-color: #202020;
+    margin-top: 45px;
+}
+
+.footer-container {
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+
+
+}
+
+.footer-item {
+    align-self: center;
+    margin: 0;
+}
+
+/* .footer-container h1{
+
+}  */
+
+.footer-container p {
+    color: #D7D7D7;
 }
 
 /* MEDIA QUERIES */
